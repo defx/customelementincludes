@@ -34,5 +34,5 @@ export async function customElementIncludes(html) {
     scripts += `<script type="module" src="/${path}"></script>`
   })
 
-  return html.replace("</body>", `${scripts}</body>"`)
+  return html.replace("</body>", `${scripts}</body>`)
 }

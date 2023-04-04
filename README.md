@@ -26,3 +26,5 @@ components/
 ```
 
 ...when you invoke the customElementIncludes function it will search the html you pass it for any Custom Element tags, and then inject module scripts to load any tags that have matching component files.
+
+Note that this process _isn't_ recursive...if one component relies on another component then you must ensure that it loads that component via a [side-effect import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#import_a_module_for_its_side_effects_only)
